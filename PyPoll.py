@@ -28,11 +28,11 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 total_votes = 0
 # Candidate Options list
 candidate_options = []
-#Candidate Options list
+#County Options list
 county_options = []
 #Empty dictionary
 candidate_votes = {}
-#Empty dictionary3
+#Empty dictionary
 county_votes = {}
 
 # Winning Candidate and Winning Count Tracker

@@ -18,11 +18,9 @@ candidate_options = []
 candidate_votes = {}
 
 
-
 # 1: Create a county list and county votes dictionary.
 #County Options list
 county_options = []
-#Empty dictionary
 county_votes = {}
 
 
@@ -103,7 +101,6 @@ with open(file_to_save, "w") as txt_file:
         c_vote_percentage = float(c_votes) / float(total_votes) * 100
         county_results = (
             f"{county_name}: {c_vote_percentage:.1f}% ({c_votes:,})\n")
-
 
         # 6d: Print the county results to the terminal.
         print(county_results)
