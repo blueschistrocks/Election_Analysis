@@ -52,7 +52,7 @@ The first section of the code established a county options list and a county vot
 
 - Click the following links for images of the terminal and text file output of the election analysis python script. 
   - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d56125dd92909dd2e8c181096415e863222bbb3f/analysis/Terminal_output.png) to view the terminal output. 
-  - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d56125dd92909dd2e8c181096415e863222bbb3f/analysis/Text_file_output.png) to view the text file. 
+  - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/7da71878493114e7312cc82fe919cdd4889e8ad8/analysis/election_analysis.txt) to view the text file. 
 
 ## Proposal for Additional Election Analyses
 
