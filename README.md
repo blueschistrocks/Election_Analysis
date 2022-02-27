@@ -3,6 +3,9 @@
 
 Tom and Seth (Client) have requested further analysis of the congressional election results for Arapahoe, Denver, Jefferson counties.  The original election analysis was conducted to determine the total votes for all three counties, total votes for each candidate, percentage of votes for each candidate and the winner of the election.  The client is interested in the voter count for each county, the percentage of votes per county and which county had the highest voter count.
 
+ - The original code is available for review at this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d780ec4209de5d80198d9c36d8cd9b57140458b4/PyPoll.py)
+
+ - The modified code is available for review at this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d780ec4209de5d80198d9c36d8cd9b57140458b4/PyPoll_Challenge.py)
 
 ## Modification of the Original Python Code
 
