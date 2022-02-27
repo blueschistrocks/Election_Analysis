@@ -28,12 +28,9 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 total_votes = 0
 # Candidate Options list
 candidate_options = []
-#County Options list
-county_options = []
 #Empty dictionary
 candidate_votes = {}
-#Empty dictionary
-county_votes = {}
+
 
 # Winning Candidate and Winning Count Tracker
 winning_candidate = ""
@@ -68,17 +65,7 @@ with open(file_to_load) as election_data:
         
         # Add a vote to that candidate's count.
         candidate_votes[candidate_name] += 1
-        
-        # Add the county name to the candidate list.
-        if county_name not in county_options:
-            # Add it to the list of candidates.
-            county_options.append(county_name)
-
-            #Begion tracking a county's votes count
-            county_votes[county_name] = 0
-        
-        # Add a vote to that county's count.
-        county_votes[county_name] += 1
+               
         
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:

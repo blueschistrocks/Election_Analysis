@@ -1,8 +1,11 @@
 # Election_Analysis
 ## Overview of Project
 
-Tom and Seth (Client) have requested further analysis of the congressional election results for Arapahoe, Denver, Jefferson counties.  The original election analysis was conducted to determine the total votes for all three counties, total votes for each candidate, percentage of votes for each candidate and the winner of the election.  The client is interested in what the voter turnout for each county, the percentage of votes per county and which county had the highest voter turnout.
+Tom and Seth (Client) have requested further analysis of the congressional election results for Arapahoe, Denver, Jefferson counties.  The original election analysis was conducted to determine the total votes for all three counties, total votes for each candidate, percentage of votes for each candidate and the winner of the election.  The client is interested in the voter count for each county, the percentage of votes per county and which county had the highest voter count.
 
+ - The original code is available for review at this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d780ec4209de5d80198d9c36d8cd9b57140458b4/PyPoll.py)
+
+ - The modified code is available for review at this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d780ec4209de5d80198d9c36d8cd9b57140458b4/PyPoll_Challenge.py)
 
 ## Modification of the Original Python Code
 
@@ -52,7 +55,7 @@ The first section of the code established a county options list and a county vot
 
 - Click the following links for images of the terminal and text file output of the election analysis python script. 
   - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d56125dd92909dd2e8c181096415e863222bbb3f/analysis/Terminal_output.png) to view the terminal output. 
-  - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/d56125dd92909dd2e8c181096415e863222bbb3f/analysis/Text_file_output.png) to view the text file. 
+  - Click this [Link](https://github.com/blueschistrocks/Election_Analysis/blob/7da71878493114e7312cc82fe919cdd4889e8ad8/analysis/election_analysis.txt) to view the text file. 
 
 ## Proposal for Additional Election Analyses
 
@@ -60,7 +63,7 @@ The methods used in this election analysis can be modified to provide a further 
 
 - Conducting a wider analysis of election data in the State of Colorado for other congressional district elections, gubernatorial elections, state senator elections, state representative elections and ballot initiative elections.  
 
-- An analysis of other state election date and federal election data. 
+- An analysis of other state election data and federal election data. 
 
 In addition to the analysis proposed above, a deeper analysis of the election data can be conducted using the Pandas Python package.
 
