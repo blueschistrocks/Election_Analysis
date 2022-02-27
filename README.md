@@ -1,7 +1,7 @@
 # Election_Analysis
 ## Overview of Project
 
-Tom and Seth (Client) have requested further analysis of the congressional election results for Arapahoe, Denver, Jefferson counties.  The original election analysis was conducted to determine the total votes for all three counties, total votes for each candidate, percentage of votes for each candidate and the winner of the election.  The client is interested in what the voter turnout for each county, the percentage of votes per county and which county had the highest voter turnout.
+Tom and Seth (Client) have requested further analysis of the congressional election results for Arapahoe, Denver, Jefferson counties.  The original election analysis was conducted to determine the total votes for all three counties, total votes for each candidate, percentage of votes for each candidate and the winner of the election.  The client is interested in what the voter turnout for each county, the percentage of votes per county and which county had the highest voter count.
 
 
 ## Modification of the Original Python Code
@@ -60,7 +60,7 @@ The methods used in this election analysis can be modified to provide a further 
 
 - Conducting a wider analysis of election data in the State of Colorado for other congressional district elections, gubernatorial elections, state senator elections, state representative elections and ballot initiative elections.  
 
-- An analysis of other state election date and federal election data. 
+- An analysis of other state election data and federal election data. 
 
 In addition to the analysis proposed above, a deeper analysis of the election data can be conducted using the Pandas Python package.
 
