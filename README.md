@@ -11,14 +11,18 @@ Tom and Seth (Client) have requested further analysis of the congressional elect
 
 The original python code was modified by adding the following code:
 
-        #Added to the code prior to the for loop.
+        ##Added to the code prior to the for loop.
         #County Options list
         county_options = []
         #Empty dictionary for county votes
         county_votes = {}
+        #Track the largest county and county voter count.
+        largest_county_vote = ""
+        winning_county_count = 0
+        winning_county_percentage = 0
 
 ### 
-        #Added to the code within the for loop.
+        ##Added to the code within the for loop.
         #Add the county name to the county list.
         if county_name not in county_options:
             #Add it to the list of counties.
@@ -29,8 +33,41 @@ The original python code was modified by adding the following code:
         
         #Add a vote to that county's count.
         county_votes[county_name] += 1
+        
+  ###
+        ##Added to the code to retrive the county votes, calculate county percentage and the county information to the text file and terminal.
+        #Write a for loop to get the counties from the county dictionary.
+          for county_name in county_votes:
 
-The first section of the code established a county options list and a county votes dictionary prior to the for loop. The second section of the code was added within the for loop.  This section searched the data for county names and if not in the county options list added the county to the list.  Then the code tracked a county’s votes and added up each county’s vote.
+              # 6b and 6c: Retrieve the county vote count and calculate the percentage of votes for the county.
+              c_votes = county_votes.get(county_name)
+              c_vote_percentage = float(c_votes) / float(total_votes) * 100
+              county_results = (
+                  f"{county_name}: {c_vote_percentage:.1f}% ({c_votes:,})\n")
+
+              # 6d: Print the county results to the terminal.
+              print(county_results)
+              # 6e: Save the county votes to a text file.
+              txt_file.write(county_results)
+
+              # 6f: Write an if statement to determine the winning county and get its vote count.
+              if (c_votes > winning_county_count) and (c_vote_percentage > winning_county_percentage):
+                   winning_county_count = c_votes
+                   winning_county = county_name
+                   winning_county_percentage = c_vote_percentage
+  ###
+          ##Added to the code to add the largest county to the text file and terminal.
+          #Print the county with the largest turnout to the terminal.
+          winning_county_summary = (
+              f"-------------------------\n"
+              f"Largest County Turnout: {winning_county}\n"
+              f"-------------------------\n")
+          print(winning_county_summary)
+          # 8: Save the county with the largest turnout to a text file.
+          txt_file.write(winning_county_summary)
+
+
+The first section of the code established a county options list and a county votes dictionary prior to the for loop. The second section of the code was added within the for loop.  This section searched the data for county names and if not in the county options list added the county to the list.  Then the code tracked a county’s votes and added up each county’s vote.  The third section of code calculated the percentage of votes for each county and the county with the most votes then added this information to the text file and terminal output. The forth section of code added the county with the most votes to the text file and terminal output.
 
 ## Analysis Results
 
